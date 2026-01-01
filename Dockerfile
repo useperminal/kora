@@ -10,4 +10,4 @@ COPY --from=builder /usr/src/app/target/release/kora /usr/local/bin/
 COPY --from=builder /usr/src/app/kora.toml /app/kora.toml
 COPY --from=builder /usr/src/app/signers.toml /app/signers.toml
 EXPOSE 8080
-CMD ["kora", "--config", "/app/kora.toml", "rpc", "start", "--signers-config", "/app/signers.toml"]
+CMD ["kora", "rpc", "start", "--signers-config", "/app/signers.toml"]
