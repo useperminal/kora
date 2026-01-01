@@ -1,4 +1,8 @@
+[signer_pool]
+strategy = "round_robin"
+
 [[signers]]
-name = "fee_payer"
+name = "main_signer"
 type = "memory"
 private_key_env = "SIGNER_PRIVATE_KEY"
+weight = 1
