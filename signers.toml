@@ -1,4 +1,7 @@
-[[signer]]
+[signer_pool]
+name = "default"
+
+[[signer_pool.signers]]
 name = "fee_payer"
 type = "env_keypair"
 env_var = "SIGNER_PRIVATE_KEY"
