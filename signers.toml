@@ -1,4 +1,4 @@
 [[signers]]
 name = "fee_payer"
-type = "env_keypair"
-env_var = "SIGNER_PRIVATE_KEY"
+type = "memory"
+keypair = "$SIGNER_PRIVATE_KEY"
