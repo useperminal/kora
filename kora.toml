@@ -6,13 +6,15 @@ port = 8080
 # Uses RPC_URL from environment variable
 
 [signer]
-# Uses SIGNER_PRIVATE_KEY from environment variable
-type = "env_keypair"
+# Handled by signers.toml
 
 [fees]
-# Disable fees for now (we'll add later)
 enabled = false
 
 [validation]
-# Allow all programs for now
 enabled = false
+max_allowed_lamports = 100000000
+max_signatures = 10
+allowed_programs = []
+allowed_tokens = []
+blocked_accounts = []
